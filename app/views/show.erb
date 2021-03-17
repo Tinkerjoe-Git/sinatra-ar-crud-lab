@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sinatra Active Record CRUD Lab</title>
+    </head>
+
+    <body>
+
+    <h1>Article's title:<%=@article.title%></h1>
+    <p><%=@article.content%></p>
+    <form method="post" action="/articles/<%=@article.id%>">
+        <input id="hidden" type="hidden" name="_method" value="DELETE">
+        <input type="submit" value="Delete">
+    </form>
+    
+    </body>
+</html>
