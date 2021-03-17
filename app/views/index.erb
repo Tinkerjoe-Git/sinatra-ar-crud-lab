@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sinatra Active Record CRUD Lab</title>
+    </head>
+
+    <body>
+        <ul>
+        <% @articles.each do |article| %>
+            <li><%=article.title%></li>
+        <% end %>
+        </ul>
+    </body>
+</html>
